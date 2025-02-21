@@ -29,3 +29,10 @@ use Illuminate\Support\Facades\Route;
 //     echo "ini halaman mahasiswa dengan nama $nama";
 // });
 
+Route::get('mahasiswa', function () {
+    $kelas = "IS62";
+    $data = ["khalifak","Herdio","Cutputri","Sri","iwan","wawa"];
+    // return view('mahasiswa.index') ->with('mhs',$data) ->with('kls',$kelas);
+    return view('mahasiswa.index',compact('kelas','data'));
+});
+
