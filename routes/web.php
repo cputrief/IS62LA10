@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // halaman domain
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('/cth', function () {
 //     return view('contoh');
@@ -29,10 +29,20 @@ use Illuminate\Support\Facades\Route;
 //     echo "ini halaman mahasiswa dengan nama $nama";
 // });
 
-Route::get('mahasiswa', function () {
-    $kelas = "IS62";
-    $data = ["khalifak","Herdio","Cutputri","Sri","iwan","wawa"];
-    // return view('mahasiswa.index') ->with('mhs',$data) ->with('kls',$kelas);
-    return view('mahasiswa.index',compact('kelas','data'));
+// Route::get('mahasiswa', function () {
+//     $kelas = "IS62";
+//     $data = ["khalifak","Herdio","Cutputri","Sri","iwan","wawa"];
+//     // return view('mahasiswa.index') ->with('mhs',$data) ->with('kls',$kelas);
+//     // metode compact
+//     return view('mahasiswa.index',compact('kelas','data'));
+// });
+
+Route::get('/mahasiswa', function (){
+    $nama = "cut putri efrina";
+    $nilai = 80;
+
+    $nilai2 = [85,30,50,70,35,100];
+
+    return view ('mahasiswa', compact('nama','nilai','nilai2'));
 });
 
