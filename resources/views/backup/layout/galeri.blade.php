@@ -17,13 +17,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/mahasiswa">Mahasiswa</a>
+                <a class="nav-link" aria-current="page" href="/mahasiswa">Mahasiswa</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/dosen">Dosen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/mahasiswa">Galeri</a>
+                <a class="nav-link active" href="/galeri">Galeri</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -35,23 +35,26 @@
       </nav>
 
       <div class="container text-center mt-3 bg-white">
-        <h2 class="mb-3">Data Mahasiswa</h2>
+        <h2 class="mb-3">Galeri Foto</h2>
         <div class="row">
-            <div class="m-auto col-8">
-              <ol class="list-group">
-                  @forelse ($data_mhs as $mhs)
-                  <li class="list-group-item">{{$mhs}}</li>
-                  @empty
-                  <div class="alert alert-secondary" role="alert">
-                      Maaf data Mahasiswa tidak tersedia!
-                    </div>
-                  @endforelse
-                </ol>
+            <div class="m-auto col-4">
+                <img src="{{ asset('/img/k1.jpg')}}" class="img-thumbnail img-fluid" alt="">
             </div>
-        </div>
-        
-        {{-- konten --}}
-    </div>
+            <div class="m-auto col-4">
+                <img src="{{ asset('/img/k2.jpg')}}" class="img-thumbnail img-fluid" alt="">
+            </div>
+            <div class="m-auto col-4">
+                <img src="{{ asset('/img/k3.jpg')}}" class="img-thumbnail img-fluid" alt="">
+            </div>
+            <div class="m-auto col-4">
+                <img src="{{ asset('/img/k4.jpg')}}" class="img-thumbnail img-fluid" alt="">
+            </div>
+            <div class="m-auto col-4">
+                <img src="{{ asset('/img/k5.jpg')}}" class="img-thumbnail img-fluid" alt="">
+            </div>
+            <div class="m-auto col-4">
+                <img src="{{ asset('/img/k6.jpg')}}" class="img-thumbnail img-fluid" alt="">
+            </div>
 
       <footer class="fixed-bottom bg-dark text-white py-4 mt-4 text-center">
           Copyright &copy; Cut Putri Efrina - 2025
