@@ -17,13 +17,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Mahasiswa</a>
+                <a class="nav-link active" aria-current="page" href="/mahasiswa">Mahasiswa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Dosen</a>
+                <a class="nav-link" href="/dosen">Dosen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Galeri</a>
+                <a class="nav-link" href="/mahasiswa">Galeri</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -34,9 +34,24 @@
         </div>
       </nav>
 
-      <div>
-          {{-- konten --}}
-      </div>
+      <div class="container text-center mt-3 bg-white">
+        <h2 class="mb-3">Data Mahasiswa</h2>
+        <div class="row">
+            <div class="m-auto col-8">
+              <ol class="list-group">
+                  @forelse ($data_mhs as $mhs)
+                  <li class="list-group-item">{{$mhs}}</li>
+                  @empty
+                  <div class="alert alert-secondary" role="alert">
+                      Maaf data Mahasiswa tidak tersedia!
+                    </div>
+                  @endforelse
+                </ol>
+            </div>
+        </div>
+        
+        {{-- konten --}}
+    </div>
 
       <footer class="fixed-bottom bg-dark text-white py-4 mt-4 text-center">
           Copyright &copy; Cut Putri Efrina - 2025
