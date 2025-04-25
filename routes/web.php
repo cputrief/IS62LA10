@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // halaman domain
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
@@ -59,3 +59,6 @@ Route::get('/dosen', function (){
 Route::get('/galeri', function (){
     return view('data.galeri');
 });
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
