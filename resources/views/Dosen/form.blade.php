@@ -11,7 +11,7 @@
                 <div class="card-body">
                    
                     <div class="card-body">
-                        <form action="index" method="post">
+                        <form action="index.blade.php" method="post">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">NIDN</label>
                                 <input type="text" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -37,7 +37,7 @@
                                 <input type="text" name="no_hp" class="form-control" id="exampleInputPassword1">
                             </div>
                             
-                            <a href="dosen"><button type="submit" class="btn btn-primary" >Submit</button></a>
+                            <a href="dosen"><button type="button" class="btn btn-primary float-end">submit</button></a>
                         </form>
                         </div>
 

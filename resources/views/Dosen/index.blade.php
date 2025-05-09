@@ -25,12 +25,12 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <td scope="row">1</td>
+                        <td>5651725271</td>
+                        <td>cut putri efrina</td>
+                        <td>full time</td>
+                        <td>putri@gmail.com</td>
+                        <td>0823451326</td>
                         <th></th>
                        
                       </tr>
