@@ -1,6 +1,8 @@
 <?php
 // use = sama dengan include
 use Illuminate\Support\Facades\Route;
+// include contoller
+use App\Http\Controllers\dosenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // halaman domain
-Route::get('/home', function () {
-    return view('welcome');
-});
+// Route::get('/home', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/cth', function () {
 //     return view('contoh');
@@ -46,19 +48,25 @@ Route::get('/home', function () {
 //     return view ('mahasiswa', compact('nama','nilai','nilai2'));
 // });
 
-Route::get('/mahasiswa', function (){
-    $data_mhs = ["abdul","aidil","alif","asfal"];
-    return view('data.mahasiswa', compact('data_mhs'));
-});
+// Route::get('/mahasiswa', function (){
+//     $data_mhs = ["abdul","aidil","alif","asfal"];
+//     return view('data.mahasiswa', compact('data_mhs'));
+// });
 
-Route::get('/dosen', function (){
-    $data_dos = ["ismanudin","mustofa lutfi","Dzulgunar","asfal"];
-    return view('data.dosen', compact('data_dos'));
-});
+// Route::get('/dosen', function (){
+//     $data_dos = ["ismanudin","mustofa lutfi","Dzulgunar","asfal"];
+//     return view('data.dosen', compact('data_dos'));
+// });
 
-Route::get('/galeri', function (){
-    return view('data.galeri');
-});
+// Route::get('/galeri', function (){
+//     return view('data.galeri');
+// });
+
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// data dosen
+Route::get('/dosen', [dosenController::class, 'index']);
+// untuk menampilkan data dosen
+Route::get('/dosen/tambah', [dosenController::class, 'create']);
