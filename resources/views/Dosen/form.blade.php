@@ -21,11 +21,13 @@
                                 <input type="text" name="nama" class="form-control" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Jabatan</label>
+                                <label for="exampleInputPassword1" class="form-label">Rumpun</label>
                                 <select name="jabatan" class="form-control" id="">
-                                    <option value="">-Pilih Jabatan-</option>
-                                    <option value="Full Time">Full Time</option>
-                                    <option value="Part Time">Part Time</option>
+                                    <option value="">-Pilih Rumpun-</option>
+                                    <option value="Komputer">Komputer</option>
+                                    <option value="Bisnis">Bisnis</option>
+                                    <option value="Manajemen">Manajemen</option>
+                                    <option value="Akuntansi">Akuntansi</option>
                                 </select>
                             </div>
                             <div class="mb-3">
