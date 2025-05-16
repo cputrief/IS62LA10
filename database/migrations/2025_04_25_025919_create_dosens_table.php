@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('nidn')->unique();
             $table->string('nama','50');
             $table->string('email','50');
+            $table->string('rumpun','50');
+            $table->string('nohp','50');
             $table->timestamps();
         });
     }

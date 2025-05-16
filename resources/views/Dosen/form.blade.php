@@ -11,7 +11,8 @@
                 <div class="card-body">
                    
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="/dosen" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">NIDN</label>
                                 <input type="text" name="nidn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -22,7 +23,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Rumpun</label>
-                                <select name="jabatan" class="form-control" id="">
+                                <select name="rumpun" class="form-control" id="">
                                     <option value="">-Pilih Rumpun-</option>
                                     <option value="Komputer">Komputer</option>
                                     <option value="Bisnis">Bisnis</option>
@@ -36,7 +37,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">No Handphone</label>
-                                <input type="text" name="no_hp" class="form-control" id="exampleInputPassword1">
+                                <input type="text" name="nohp" class="form-control" id="exampleInputPassword1">
                             </div>
                             
                             <a href=""><button type="button" class="btn btn-primary float-end">submit</button></a>

@@ -70,3 +70,4 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/dosen', [dosenController::class, 'index']);
 // untuk menampilkan data dosen
 Route::get('/dosen/tambah', [dosenController::class, 'create']);
+Route::post('/dosen', [dosenController::class, 'store']);
