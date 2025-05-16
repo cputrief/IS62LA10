@@ -31,7 +31,11 @@
                         <td>full time</td>
                         <td>putri@gmail.com</td>
                         <td>0823451326</td>
-                        <th></th>
+                        <th>
+                          <a href="" class="btn btn-warning btn-sm">detail</a>
+                          <a href="" class="btn btn-info btn-sm">edit</a>
+                          <a href="" class="btn btn-danger btn-sm">hapus</a>
+                        </th>
                        
                       </tr>
                       
