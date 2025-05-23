@@ -71,3 +71,7 @@ Route::get('/dosen', [dosenController::class, 'index']);
 // untuk menampilkan data dosen
 Route::get('/dosen/tambah', [dosenController::class, 'create']);
 Route::post('/dosen', [dosenController::class, 'store']);
+Route::get('/dosen/edit/{id}', [dosenController::class, 'edit']);
+// selagi method nya beda alamat dosen nya tidak apa" sama
+Route::PUT('/dosen/{id}', [dosenController::class, 'update']);
+Route::DELETE('/dosen/{id}', [dosenController::class, 'destroy']);
